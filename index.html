@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<nav>
+		<div class="leftSide">
+			<a href="index.html"><img src="logo.png" style="width:20px; margin-right: 20px;"></a>
+			<div class='home'>
+				<a href="index.html">HOME</a>
+			</div>
+				<a href="aboutme.html">ABOUT ME</a>
+		</div>
+		<div class="rightSide">
+			<a href="#home">RANA BOZDAG</a>
+		</div>
+	</nav>
+	<main>
+		<div class="items">
+			<div class="item" onclick="myFunction()">
+				<div class="img-bg" style="background-image: url('http://rbozdag.fklavye.net/media/images/rbozdag/logos_bg.jpg');"></div>
+				<div class="img-text">
+					<div class="img-logo">
+						<img src="http://fklavye.net/media/images/rbozdag/logos.png">
+					</div>
+					<div class="subtitle">LOGOS</div>
+				</div>
+			</div>
+
+			<a href="websites.html">
+			<div class="item">
+				<div class="img-bg" style="background-image: url('http://rbozdag.fklavye.net/media/images/rbozdag/websites_bg.jpg');"></div>
+				<div class="img-text">
+					<div class="img-logo">
+						<img src="http://fklavye.net/media/images/rbozdag/website.png">
+					</div>
+					<div class="subtitle">WEBSITES</div>
+				</div>
+			</div>
+			</a>
+
+			<a href="icons.html">
+			<div class="item">
+				<div class="img-bg" style="background-image: url('http://rbozdag.fklavye.net/media/images/rbozdag/icons_bg.jpg');"></div>
+				<div class="img-text">
+					<div class="img-logo">
+						<img src="http://fklavye.net/media/images/rbozdag/icons.png">
+					</div>
+					<div class="subtitle">ICONS</div>
+				</div>
+			</div></a>
+
+			<div class="item" onclick="myFunction()>
+				<div class="img-bg" style="background-image: url('http://rbozdag.fklavye.net/media/images/rbozdag/codes_bg.jpg');"></div>
+				<div class="img-text">
+					<div class="img-logo">
+						<img src="http://fklavye.net/media/images/rbozdag/codes.png">
+					</div>
+					<div class="subtitle">CODES</div>
+				</div>
+			</div>
+			
+			<a href="aboutme.html">
+			<div class="item">
+				<div class="img-bg" style="background-image: url('http://rbozdag.fklavye.net/media/images/rbozdag/aboutme_bg.jpg');"></div>
+				<div class="img-text">
+					<div class="img-logo">
+						<img src="http://fklavye.net/media/images/rbozdag/aboutme.png">
+					</div>
+					<div class="subtitle">ABOUT ME</div>
+				</div>
+			</div></a>
+
+			<a href="#contact">
+				<div class="item">
+					<div class="img-bg" style="background-image: url('http://rbozdag.fklavye.net/media/images/rbozdag/contact_bg.jpg');"></div>
+					<div class="img-text">
+						<div class="img-logo">
+							<img src="http://fklavye.net/media/images/rbozdag/contact.png">
+						</div>
+						<div class="subtitle">CONTACT</div>
+					</div>
+				</div></a>
+		</div>
+		<div class="esc">
+			<div class="esc-icon">
+				<img src="http://fklavye.net/media/images/rbozdag/eat.png">
+				<img src="http://fklavye.net/media/images/rbozdag/sleep.png">
+				<img src="http://fklavye.net/media/images/rbozdag/code.png">
+				<img src="http://fklavye.net/media/images/rbozdag/design.png">
+				<h3>EAT</h3>
+				<h3>SLEEP</h3>
+				<h3>CODE</h3>
+				<h3>DESIGN</h3>
+			</div>
+			
+		</div>
+
+		<div class="about" id="about">
+			<div class="about_container">
+				<div class="about-profile"></div>
+				<div class="about-text">A creative, hardworking, passionate web designer with strong self-motivation and loving teach and learn. Able to work effectively in a team. A good communicator, open-minded in new ideas.
+					<a href="aboutme.html"><button>LEARN MORE</button></a>
+				</div>
+				
+			</div>
+						
+		</div>
+	</main>
+<footer>
+		<div id="contact">
+			<div class="contact-icon"><img src="http://fklavye.net/media/images/rbozdag/kite.png"></div>
+			<div class="contact-info">
+				<table>
+				  <tr>
+				    <td><i class="material-icons">email</i></i></td>
+				    <td>rb_1997@hotmail.com</td>
+				  </tr>
+				  <tr>
+				    <td><i class="material-icons">phone</i></td>
+				    <td>+90 123 456 78 89</td>
+				  </tr>
+				  <tr>
+				    <td><strong style="font-size:1.3em;font-weight: bold;">in</strong></td>
+				    <td><a href="https://www.linkedin.com/in/rbozdag/" style="color: dimgray;">https://www.linkedin.com/in/rbozdag/</a></td>
+				  </tr>
+				</table>
+			</div>
+		</div>
+</footer>
+</body>
+<script type="text/javascript">
+	const Items= document.querySelectorAll('.item');
+	Items.forEach(Item => {
+		Item.addEventListener('mouseover',() =>{
+			Item.childNodes[1].classList.add('img-darken')
+		})
+		Item.addEventListener('mouseout',() =>{
+			Item.childNodes[1].classList.remove('img-darken')
+		})
+	})
+	function myFunction() {
+  	alert("Hello! It will be active soon!");
+	}
+</script>
+</html>
